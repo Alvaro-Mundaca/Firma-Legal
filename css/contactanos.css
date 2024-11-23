@@ -22,11 +22,11 @@ form.active {
 /* Contenedor de elementos */
 .Elementos_contacto {
     display: flex;
-    justify-content: space-between; /* Distribuye espacio entre el formulario y la imagen */
-    align-items: flex-start; /* Alinea los elementos al inicio de cada columna */
-    margin: 40px auto; /* Espaciado superior/inferior */
-    max-width: 1200px; /* Ancho máximo para la sección */
-    gap: 40px; /* Espaciado entre el formulario y la imagen */
+    justify-content: space-between; 
+    align-items: flex-start;
+    margin: 40px auto; 
+    max-width: 1200px; 
+    gap: 40px; 
 }
 
 
@@ -34,7 +34,7 @@ form.active {
 .Elementos_contacto img {
     transform: translateX(100%); /* Comienza fuera de la pantalla a la derecha */
     opacity: 0; /* Invisible inicialmente */
-    transition: transform 1s ease-out, opacity 1s ease-out; /* Transición suave para posición y opacidad */
+    transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
 /* Clase activa para mostrar la imagen */

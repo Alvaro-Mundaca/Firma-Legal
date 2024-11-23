@@ -2,6 +2,7 @@
 /* resolución de Smartphone */
 @media (max-width: 768px) 
 {
+   
     .ul_links{
         display: none;
         flex-direction: column;
@@ -47,6 +48,7 @@
     #spn3{
         top: 22px;
     }
+
 
     #btnMenu{
         display: none;

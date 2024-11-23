@@ -3,17 +3,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form"); // Selecciona el formulario
     const contactoSection = document.querySelector("#contacto"); // Selecciona la sección de contacto
 
-    if (!form || !contactoSection) {
-        console.error("Formulario o sección de contacto no encontrado.");
-        return;
-    }
 
     // Configura el IntersectionObserver
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    form.classList.add("active"); // Agrega la clase `active` al formulario
+                    form.classList.add("active"); 
                     observer.unobserve(entry.target); // Detiene la observación para mejorar el rendimiento
                 }
             });
@@ -34,10 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         const contactoSection = document.querySelector("#contacto"); // Selecciona la sección de contacto
         const contactImage = document.querySelector(".Elementos_contacto img"); // Selecciona la imagen
 
-        if (!form || !contactoSection || !contactImage) {
-            console.error("Formulario, sección de contacto o imagen no encontrado.");
-            return;
-        }
 
         // Configura el IntersectionObserver
         const observer = new IntersectionObserver(
@@ -58,17 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         observer.observe(contactoSection); // Observa la sección completa
     });
-
-
-
-
-
-
-
-
-
-
-
 
     document.addEventListener("DOMContentLoaded", function () {
         const form = document.querySelector("form"); // Selecciona el formulario
@@ -101,3 +82,26 @@ document.addEventListener("DOMContentLoaded", function () {
 
         observer.observe(contactoSection); // Observa la sección completa
     });
+
+
+    function validarFormulario(event) {
+        // Prevenir el envío del formulario
+        event.preventDefault();
+
+        // Obtener los valores de los campos
+        const nombre = document.getElementById("nombre").value.trim();
+        const departamento = document.getElementById("departamento").value.trim();
+        const telefono = document.getElementById("telefono").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const mensaje = document.getElementById("mensaje").value.trim();
+
+        const formulario = document.getElementById("formularioContacto");
+
+        // Validar si algún campo está vacío
+        if (!nombre || !departamento || !telefono || !email || !mensaje) {
+            alert("Debe completar todos los campos");
+        } else {
+            alert("¡Formulario enviado con éxito!");
+            formulario.reset();
+        }
+    }

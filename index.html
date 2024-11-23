@@ -164,28 +164,29 @@
     </div>
 </section>
 
- <!-- Sección Contacto  -->
+
+
+<!-- Sección Contacto -->
 <section id="contacto" class="contacto">
-    <div class="Contacto-titulo">
-        <h1>Contactanos</h1>
+    <div class="Contacto-titulo"> 
+        <h1>Contáctanos</h1>
     </div>
 
     <div class="Elementos_contacto">
-        <form action="#">
-            <input type="text" name="nombre" placeholder="Tu Nombre">
-            <input type="text" name="departamento" placeholder="Departamento">
-            <input type="text" name="telefono" placeholder="Tu Teléfono">
-            <input type="email" name="email" placeholder="Tu Email">
-            <textarea name="mensaje" placeholder="Tu Mensaje"></textarea>
+        <form id="formularioContacto" onsubmit="validarFormulario(event)">
+            <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
+            <input type="text" id="departamento" name="departamento" placeholder="Departamento">
+            <input type="text" id="telefono" name="telefono" placeholder="Tu Teléfono">
+            <input type="email" id="email" name="email" placeholder="Tu Email">
+            <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje"></textarea>
             <button type="submit">Enviar Consulta</button>
         </form>
 
         <div class="Imagen-contacto">
-            <img src="Images/contacto.jpg" alt="Imagen de contacto">
-        </div>
+            <img src="Images/contacto.jpg" alt="Contacto">
+        </div> 
     </div>
 </section>
-
 
     <!-- Footer -->
     <footer>
