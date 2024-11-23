@@ -1,0 +1,162 @@
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+}
+
+.Elementos_footer {
+    display: flex;
+    justify-content: space-around; /* Asegura espacio entre los bloques */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+    gap: 20px; /* Espacio entre elementos */
+    margin-bottom: 20px;
+}
+
+.Redes {
+    margin: 10px;
+    flex: 1 1 280px; /* Ancho mínimo de 280px, flexible */
+    max-width: 300px;
+}
+
+.Redes ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+    display: flex; /* Organiza los íconos en una fila horizontal */
+    justify-content: center; /* Centra los íconos */
+    gap: 15px; /* Espaciado entre los íconos */
+    margin: 0;
+}
+
+.Redes li {
+    margin: 0;
+}
+
+.Redes img {
+    width: 40px; 
+    height: auto;
+    transition: transform 0.2s; /* Efecto suave de transición al hover */
+}
+
+.Ubicanos img,
+.Logo_inferior img{
+    transition: transform 0.2s; /* Efecto suave de transición al hover */
+}
+
+.Redes img:hover,
+.Ubicanos img:hover,
+.Logo_inferior img:hover {
+    transform: scale(1.1); /* Amplía ligeramente el ícono al pasar el ratón */
+}
+
+.Asesoria{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+}
+
+.Redes,
+.Escribenos,
+.Ubicanos {
+    margin: 10px; /* Espaciado general */
+    flex: 1 1 280px; /* Ancho mínimo de 280px, flexible */
+    max-width: 300px;
+}
+
+.Asesoria ul,
+.Escribenos ul,
+.Ubicanos ul {
+    list-style-type: none; /* Quita los puntos de la lista */
+    padding: 0;
+}
+
+.Asesoria li,
+.Escribenos li,
+.Ubicanos li {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    gap: 10px;
+    margin: 5px 0;
+}
+
+.Asesoria img,
+.Escribenos img,
+.Ubicanos img {
+    height: 13px;
+    margin-right: 5px;
+}
+
+footer p {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+footer .Ubicanos img {
+    width: 100%; /* Ajusta el tamaño del mapa */
+    height: auto;
+}
+
+.Logo_inferior {
+    flex: 1 1 150px;
+    max-width: 200px;
+    margin: auto;
+}
+
+.Mensaje {
+    text-align: center;
+}
+
+/* resolución de Smartphone */
+@media (max-width: 768px) {
+    .Elementos_footer, .Redes {
+        flex-direction: column; /* Cambia a diseño en columna */
+        align-items: center; /* Centra los elementos */
+        text-align: center;
+    }
+
+    .Redes ul {
+        flex-wrap: wrap; /* Permite que los íconos pasen a la siguiente fila si no caben */
+        gap: 10px; /* Reduce el espaciado en pantallas pequeñas */
+    }
+
+    .Redes img {
+        width: 35px; /* Reduce el tamaño de los íconos */
+    }
+
+    .Redes,
+    .Asesoria,
+    .Escribenos,
+    .Ubicanos,
+    .Logo_inferior {
+        flex: 1 1 100%; /* Ocupan el 100% del ancho disponible */
+        max-width: none; /* Sin límite de ancho */
+    }
+
+    footer .Ubicanos img {
+        width: 80%; /* Reduce el tamaño del mapa para pantallas pequeñas */
+        margin: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .Asesoria li,
+    .Escribenos li,
+    .Ubicanos li {
+        flex-direction: column; /* Imagen arriba, texto abajo */
+        align-items: flex-start; /* Alinea los textos a la izquierda */
+        text-align: left;
+        gap: 5px;
+    }
+
+    footer .Ubicanos img {
+        width: 100%; /* Usa todo el ancho disponible */
+    }
+
+    .Mensaje p {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto */
+    }
+
+    .Redes img {
+        width: 30px; /* Reduce aún más el tamaño de los íconos en pantallas muy pequeñas */
+    }
+}

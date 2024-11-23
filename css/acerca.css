@@ -1,0 +1,108 @@
+
+.Acerca-grid-01 {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 40px; 
+    justify-content: center; 
+    margin: 40px auto; 
+}
+
+
+.Acerca-item-01 {
+    background-color: #295C7A;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    height: 200px;
+    width: 300px; 
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 200px;
+}
+
+
+.Acerca-item-02 {
+    background-color: white;
+    color: black;
+    padding: 25px;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    height: 280px; 
+    width: 300px; 
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: -25px;
+}
+
+
+.Acerca-titulo {
+    color: #C8B824;
+    font-size: 30px;
+    text-align: center; 
+    margin: 20px auto;
+}
+
+
+/* Tablet*/
+@media (max-width: 1024px) {
+    .Acerca-grid-01 {
+        gap: 50px; 
+        margin-bottom: 50px;
+    }
+
+    .Acerca-item-02{
+        margin-left: -25px;
+        
+    }
+
+
+}
+
+
+
+/* Smartphone normales */
+@media (max-width: 768px) {
+    .Acerca-grid-01 {
+        gap: 50px; 
+        margin-bottom: 100px;
+    }
+
+    .Acerca-item-02{
+        margin-left: -25px;
+        
+    }
+
+
+}
+
+/* Smartphone pequeños*/
+@media (max-width: 480px) {
+    .Acerca-grid-01 {
+        gap: 50px;
+    }
+
+    .Acerca-titulo {
+        font-size: 20px; 
+        margin: 10px auto; 
+    }
+
+    .Acerca-item-01{
+        font-size: 10px;
+        height: 180px; 
+        width: 200px; 
+    }
+    
+
+    .Acerca-item-02{
+        font-size: 10px;
+        height: 180px;
+        width: 200px;
+    }
+}

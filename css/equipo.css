@@ -1,0 +1,126 @@
+/* Título de la sección */
+.equipo-titulo-01 {
+    color: #C8B824;
+    font-size: 30px;
+    text-align: center; /* Centra el título */
+    margin: 20px auto; /* Espaciado superior e inferior */
+}
+
+/* Contenedores de grilla */
+.equipo-grid-01,
+.equipo-grid-02 {
+    display: flex;
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 20px; /* Espaciado entre imagen y texto */
+    margin: 50px auto; /* Centra la grilla */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+    max-width: 1200px; /* Ancho máximo para la sección */
+}
+
+/* Imagen del equipo */
+.equipo-grid-01 img,
+.equipo-grid-02 img {
+    border-radius: 20px; /* Bordes redondeados */
+    max-width: 400px; /* Ancho máximo de la imagen */
+    height: auto; /* Mantiene proporciones */
+    margin-top: 20px; /* Espaciado superior */
+}
+
+/* Contenedores de texto */
+.texto-01,
+.texto-02 {
+    flex: 1; /* Ocupa el espacio restante */
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 10px; /* Espaciado entre título y descripción */
+}
+
+/* Títulos de los socios */
+.equipo-item-01 {
+    background-color: transparent; /* Fondo transparente */
+    color: #F5F5F5; /* Texto blanco */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Descripción de los socios */
+.equipo-item-02 {
+    background-color: transparent; /* Fondo transparente */
+    color: #F5F5F5; /* Texto blanco */
+    text-align: justify; /* Justifica el texto */
+    font-size: 16px;
+    line-height: 1.6; /* Mejora la legibilidad */
+    padding: 10px; /* Espaciado interno */
+    max-width: 700px;
+}
+
+/* Responsividad */
+
+/* Pantallas medianas (hasta 1024px) */
+@media (max-width: 1024px) {
+    .equipo-grid-01,
+    .equipo-grid-02 {
+        gap: 15px; /* Reduce el espacio entre elementos */
+    }
+
+    .equipo-grid-01 img,
+    .equipo-grid-02 img {
+        max-width: 250px; /* Reduce el tamaño de la imagen */
+    }
+
+    .equipo-item-01 {
+        font-size: 20px; /* Reduce el tamaño del título */
+    }
+
+    .equipo-item-02 {
+        font-size: 16px; /* Reduce el tamaño del texto */
+    }
+}
+
+/* Pantallas pequeñas (hasta 768px) */
+@media (max-width: 768px) {
+    .equipo-grid-01,
+    .equipo-grid-02 {
+        flex-direction: column; /* Cambia a diseño vertical */
+        align-items: center; /* Centra los elementos */
+    }
+
+    .equipo-grid-01 img,
+    .equipo-grid-02 img {
+        max-width: 80%; /* La imagen ocupa el 80% del contenedor */
+        margin: 0 auto; /* Centra la imagen */
+    }
+
+    .texto-01,
+    .texto-02 {
+        text-align: center; /* Centra el texto */
+    }
+
+    .equipo-item-01 {
+        text-align: center;
+    }
+
+    .equipo-item-02 {
+        font-size: 16px; /* Reduce el tamaño del texto */
+        line-height: 1.4; /* Ajusta la legibilidad */
+    }
+}
+
+/* Pantallas muy pequeñas (hasta 480px) */
+@media (max-width: 480px) {
+    .equipo-item-01 {
+        font-size: 18px; /* Reduce el tamaño del título */
+    }
+
+    .equipo-item-02 {
+        font-size: 16px; /* Reduce el tamaño del texto */
+        line-height: 1.4; /* Ajusta la legibilidad */
+    }
+
+    .equipo-grid-01 img,
+    .equipo-grid-02 img {
+        max-width: 100%; /* La imagen ocupa todo el ancho disponible */
+    }
+}
