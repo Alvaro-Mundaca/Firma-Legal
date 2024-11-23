@@ -1,3 +1,4 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("form"); // Selecciona el formulario
     const contactoSection = document.querySelector("#contacto"); // Selecciona la sección de contacto
