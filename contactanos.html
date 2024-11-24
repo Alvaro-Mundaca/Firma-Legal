@@ -49,10 +49,11 @@
 
     </header>
 
-    <script src="js/header.js"></script>
+    <script src="js/model.js"></script>
     <script src="js/formulario.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/email.js"></script>
 
 
 
@@ -63,7 +64,7 @@
     </div>
 
     <div class="Elementos_contacto">
-        <form id="formularioContacto" onsubmit="validarFormulario(event)">
+        <form id="formularioContacto">
             <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
             <input type="text" id="departamento" name="departamento" placeholder="Departamento">
             <input type="text" id="telefono" name="telefono" placeholder="Tu Teléfono">
@@ -80,72 +81,69 @@
 
 
 
-
-     <!-- Footer -->
-     <footer>
-
-      
+ <!-- Footer -->
+ <footer>
         
-        <div class="Elementos_footer">
+    <div class="Elementos_footer">
 
 
-            <div class="Logo_inferior">
-                <a href="index.html#inicio"><img src="Images/logo_footer.png"></a>
-            </div>
-
-            <div class="Redes">
-                <p>Siguenos en nuestras redes sociales</p>
-                <br>
-                <ul>
-                    <li><a href="https://web.facebook.com/watch/Arismendizyasociados/?_rdc=1&_rdr#"><img src="Images/facebook.png"></a></li>
-                    <li><a href="https://www.instagram.com/arismendiz_asociados/?locale=es_US"><img src="Images/instagram.png"></a></a></li>
-                    <li><a href="https://www.youtube.com/@Arismendiz_Asociados"><img src="Images/youtube.png"></a></a></li>
-                    <li><a href="https://x.com/ArismendizAsocs"><img src="Images/twiter.png"></a></a></li>
-                    <li><a href="https://www.tiktok.com/@arismendizasociad?is_from_webapp=1&sender_device=pc"><img src="Images/tiktok.png"></a></a></li>
-
-                </ul>
-            </div>
-
-
-            <div class="Asesoria">
-                <p>Asesoría Directa</p>
-                <ul>
-                    <li><img src="Images/tel.png"> Tel. 074-512738</li>
-                </ul>
-            </div>
-    
-           
-    
-            <div class="Escribenos">
-                <p>Escribenos</p>
-                <ul>
-                    <li><img src="Images/whatsapp.png">+51 979828580 - Chiclayo</li>
-                    <li><img src="Images/whatsapp.png">+51 968249665 - Lambayeque</li>
-                    <li><img src="Images/whatsapp.png">+51 954766774 - Lima</li>
-                </ul>
-            </div>
-    
-    
-            <div class="Ubicanos">
-                <p>Encuentranos</p>
-                <p></p>
-                
-                <a href="https://www.google.com/maps/place/Prol.+Pacasmayo+331,+Chiclayo+14008/@-6.784067,-79.8501225,17z/data=!3m1!4b1!4m5!3m4!1s0x904cef3c8d4269bf:0x8d8706b9c3af99cf!8m2!3d-6.784067!4d-79.8475476?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">
-                    <img src="Images/mapa.png"> 
-                </a>
-    
-                <ul>
-                    <li>Prolongación Pacasmayo N° 331- Chiclayo</li>
-                </ul>
-            </div>  
-    
+        <div class="Logo_inferior">
+            <a href="index.html#inicio"><img src="Images/logo_footer.png"></a>
         </div>
 
-      
+        <div class="Redes">
+            <p>Siguenos en nuestras redes sociales</p>
+            <br>
+            <ul>
+                <li><a href="https://web.facebook.com/watch/Arismendizyasociados/?_rdc=1&_rdr#" target="_blank"><img src="Images/facebook.png"></a></li>
+                <li><a href="https://www.instagram.com/arismendiz_asociados/?locale=es_US" target="_blank"><img src="Images/instagram.png"></a></a></li>
+                <li><a href="https://www.youtube.com/@Arismendiz_Asociados" target="_blank"><img src="Images/youtube.png"></a></a></li>
+                <li><a href="https://x.com/ArismendizAsocs" target="_blank"><img src="Images/twiter.png"></a></a></li>
+                <li><a href="https://www.tiktok.com/@arismendizasociad?is_from_webapp=1&sender_device=pc" target="_blank"><img src="Images/tiktok.png"></a></a></li>
 
-        <div class="Mensaje">
-            <p>© 2024 Arismendis & Asociados – Todos los derechos reservados.</p>
+            </ul>
         </div>
-    </footer>
+
+
+        <div class="Asesoria">
+            <p>Asesoría Directa</p>
+            <ul>
+                <li><img src="Images/tel.png"> Tel. 074-512738</li>
+            </ul>
+        </div>
+
+       
+
+        <div class="Escribenos">
+            <p>Escribenos</p>
+            <ul>
+                <li><img src="Images/whatsapp.png">+51 979828580 - Chiclayo</li>
+                <li><img src="Images/whatsapp.png">+51 968249665 - Lambayeque</li>
+                <li><img src="Images/whatsapp.png">+51 954766774 - Lima</li>
+            </ul>
+        </div>
+
+
+        <div class="Ubicanos">
+            <p>Encuentranos</p>
+            <p></p>
+            
+            <a href="https://www.google.com/maps/place/Prol.+Pacasmayo+331,+Chiclayo+14008/@-6.784067,-79.8501225,17z/data=!3m1!4b1!4m5!3m4!1s0x904cef3c8d4269bf:0x8d8706b9c3af99cf!8m2!3d-6.784067!4d-79.8475476?entry=ttu&g_ep=EgoyMDI0MTAxNi4wIKXMDSoASAFQAw%3D%3D">
+                <img src="Images/mapa.png"> 
+            </a>
+
+            <ul>
+                <li>Prolongación Pacasmayo N° 331- Chiclayo</li>
+            </ul>
+        </div>  
+
+    </div>
+
+  
+
+    <div class="Mensaje">
+        <p>© 2024 Arismendis & Asociados – Todos los derechos reservados.</p>
+    </div>
+</footer>
 </body>
 </html>

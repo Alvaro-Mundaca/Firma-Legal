@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const btnMenu = document.getElementById('btnMenu'); // Seleccionamos el checkbox
+    const btnMenu = document.getElementById('btnMenu'); 
     if (btnMenu) {
         btnMenu.addEventListener('change', function () {
-            const liLinks = document.querySelectorAll('.li_links'); // Seleccionamos todos los enlaces
-            const logo = document.querySelector('.logo'); // Seleccionamos el logo
-            const ulLinks = document.querySelector('.ul_links'); // Seleccionamos el contenedor de enlaces
+            const liLinks = document.querySelectorAll('.li_links'); 
+            const logo = document.querySelector('.logo');
+            const ulLinks = document.querySelector('.ul_links'); 
 
             if (this.checked) {
                 ulLinks.style.display = 'flex';
@@ -33,10 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error('No se encontró el checkbox con ID btnMenu');
     }
 });
-
-
-
-
 
 
 
