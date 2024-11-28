@@ -87,6 +87,15 @@ body {
 
 /* Responsividad */
 
+
+@media (max-width: 2400px) {
+    .equipo-grid-01 img,
+    .equipo-grid-02 img {
+        max-width: auto; /* Reduce el tamaño de la imagen */
+    
+    }
+}
+
 /* Pantallas medianas (hasta 1024px) */
 @media (max-width: 1024px) {
     .equipo-grid-01,
