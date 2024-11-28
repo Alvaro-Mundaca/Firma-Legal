@@ -44,10 +44,6 @@ form.active {
 }
 
 
-
-
-
-
 /* Imagen de contacto */
 .Elementos_contacto img {
     border-radius: 5%; /* Esquinas redondeadas */
@@ -64,14 +60,18 @@ form {
     max-width: 500px; /* Máximo ancho del formulario */
 }
 
+
 form input,
-form textarea {
+form textarea,
+form select,
+form option{
     width: 100%; /* Ocupa todo el ancho del contenedor */
     padding: 10px; /* Espaciado interno */
     font-size: 16px;
     border: 1px solid #ccc; /* Bordes del campo */
     border-radius: 5px; /* Bordes redondeados */
     box-sizing: border-box; /* Incluye el padding en el tamaño total */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 form textarea {

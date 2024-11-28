@@ -30,11 +30,10 @@
 
 
 
-
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="Index.html#inicio"> <img src="Images/Logo2.png" alt="Logo"></a>
+            <a href="index.html#inicio"> <img src="Images/Logo2.png" alt="Logo"></a>
         </div>
         
         <nav class="navbar">
@@ -170,7 +169,6 @@
 </section>
 
 
-
 <!-- Sección Contacto -->
 <section id="contacto" class="contacto">
     <div class="Contacto-titulo"> 
@@ -178,13 +176,42 @@
     </div>
 
     <div class="Elementos_contacto">
-        <form id="formularioContacto" onsubmit="validarFormulario(event)">
+        <form id="formularioContacto">
             <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre">
-            <input type="text" id="departamento" name="departamento" placeholder="Departamento">
+            
+            <!-- Campo Departamento como un combobox -->
+            <select id="departamento" name="departamento">
+                <option value="">Selecciona un Departamento</option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Áncash">Áncash</option>
+                <option value="Apurímac">Apurímac</option>
+                <option value="Arequipa">Arequipa</option>
+                <option value="Ayacucho">Ayacucho</option>
+                <option value="Cajamarca">Cajamarca</option>
+                <option value="Callao">Callao</option>
+                <option value="Cusco">Cusco</option>
+                <option value="Huancavelica">Huancavelica</option>
+                <option value="Huánuco">Huánuco</option>
+                <option value="Ica">Ica</option>
+                <option value="Junín">Junín</option>
+                <option value="La Libertad">La Libertad</option>
+                <option value="Lambayeque">Lambayeque</option>
+                <option value="Lima">Lima</option>
+                <option value="Loreto">Loreto</option>
+                <option value="Madre de Dios">Madre de Dios</option>
+                <option value="Moquegua">Moquegua</option>
+                <option value="Pasco">Pasco</option>
+                <option value="Piura">Piura</option>
+                <option value="Puno">Puno</option>
+                <option value="San Martín">San Martín</option>
+                <option value="Tacna">Tacna</option>
+                <option value="Tumbes">Tumbes</option>
+                <option value="Ucayali">Ucayali</option>
+            </select>
+            
             <input type="text" id="telefono" name="telefono" placeholder="Tu Teléfono">
             <input type="email" id="email" name="email" placeholder="Tu Email">
             <textarea id="mensaje" name="mensaje" placeholder="Tu Mensaje"></textarea>
-
             <button type="submit">Enviar Consulta</button>
         </form>
 
@@ -193,6 +220,7 @@
         </div> 
     </div>
 </section>
+
 
  <!-- Footer -->
  <footer>
