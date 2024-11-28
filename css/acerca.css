@@ -50,6 +50,42 @@
 }
 
 
+
+
+@media (max-width: 2400px) {
+    .Acerca-grid-01 {
+        gap: 50px; 
+        margin-bottom: 50px;
+    }
+
+    .Acerca-item-02{
+        margin-left: -25px;
+        
+    }
+
+    .Acerca-item-01,
+    .Acerca-item-02 {
+        font-size: 18px;
+    }
+    
+    .Acerca-item-01 {
+        height: 220px;
+        width: 350px; 
+        margin-bottom: 250px;
+        padding: 25px;
+    }
+    
+    
+    .Acerca-item-02 {
+        height: 310px; 
+        width: 350px; 
+        margin-bottom: 200px;
+        padding: 25px;
+    }
+
+}
+
+
 /* Tablet*/
 @media (max-width: 1024px) {
     .Acerca-grid-01 {
